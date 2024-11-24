@@ -21,7 +21,7 @@ def preprocess_image(image,  target_size=(32, 32)):
 
 
 def apply_filters(img, model, confidence_threshold):
-    """Застосування фільтрів та перевірка впевненості."""
+    """Застосування фільтрів та перевірка впевненості.""" # це вам самостійно інтегрувати, потрібно або змінити
     filters = [
         ("Контраст", ImageEnhance.Contrast(img).enhance(4)),
         ("Різкість", ImageEnhance.Sharpness(img).enhance(4)),
